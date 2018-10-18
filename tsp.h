@@ -12,7 +12,7 @@ private:
 
 public:
     TSPInstance();
-    void load(string &fname);
+    void load(std::string &fname);
 };
 
 # endif
