@@ -1,7 +1,9 @@
 # ifndef TSP_H
 # define TSP_H
 
-class TSP {
+# include <cmath>
+
+class TSPInstance {
     
 };
 
