@@ -15,6 +15,7 @@ void run_method(string fname) {
 		tsp.show();
 		cout << '\n';
 		TSPSolution solution(tsp);
+		cout << "Solution:\n";
 		solution.show();
 	}
 }
