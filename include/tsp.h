@@ -13,6 +13,8 @@ private:
 public:
     TSPInstance();
     bool load(std::string &fname);
+	void show();
+	int getSize();
 };
 
 # endif

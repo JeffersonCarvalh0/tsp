@@ -1,15 +1,22 @@
 # include <iostream>
 # include <string>
 # include "tsp.h"
+# include "solution.h"
 
 using namespace std;
 
 void run_method(string fname) {
 	TSPInstance tsp;
+
 	if(!tsp.load(fname))
 		cout << "Unable to open file " << fname << '\n';
-	else
+	else {
 		cout << "File loaded successfully.\n";
+		tsp.show();
+		cout << '\n';
+		TSPSolution solution(tsp);
+		solution.show();
+	}
 }
 
 int main(int argc, char *argv[]) {

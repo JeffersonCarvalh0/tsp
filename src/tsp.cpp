@@ -1,6 +1,7 @@
 # include "tsp.h"
 # include <fstream>
 # include <iostream>
+# include <iomanip>
 # include <cmath>
 
 TSPInstance::TSPInstance() { size = 0; }
@@ -33,3 +34,12 @@ bool TSPInstance::load(std::string &filename) {
     file.close();
     return true;
 }
+
+void TSPInstance::show() {
+	for (int i = 0; i < size; ++i) {
+		for (int j = 0; j < size; ++j) std::cout << std::setw(5) << data[i][j];
+		std::cout << '\n';
+	}
+}
+
+int TSPInstance::getSize() { return size; }
